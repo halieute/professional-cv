@@ -25,23 +25,19 @@
         header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             background-color: #007acc;
             color: white;
             padding: 1em 2em;
             flex-wrap: wrap; /* Allow items to wrap on smaller screens */
         }
 
-        header .name {
-            font-size: 1.5em;
-            font-weight: bold;
+        .contact-info {
+            text-align: left;
         }
 
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-top: 10px;
+        .contact-info p {
+            margin: 0.5em 0;
         }
 
         .social-links {
@@ -58,6 +54,13 @@
 
         .social-links a:hover {
             text-decoration: underline;
+        }
+
+        .profile-picture img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 10px;
         }
 
         /* Main Content Styling */
@@ -129,7 +132,7 @@
                 flex-direction: column;
                 text-align: center;
             }
-            header img {
+            .profile-picture img {
                 margin: 1em 0;
             }
             .social-links {
@@ -158,16 +161,15 @@
             <p class="phone"><i class="fas fa-phone-alt"></i>+227 89771230</p>
             <p class="phone"><i class="fas fa-phone-alt"></i>+238 5816701</p>
             <p><a href="https://orcid.org/0009-0007-9857-0392" target="_blank">ORCID: 0009-0007-9857-0392</a></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/souleymanemamannourisouley" target="_blank">LinkedIn</a>
+                <a href="https://x.com/NouriSoule22856?t=4zDyk1SPtPulr55QZVjeXw&s=09" target="_blank">Twitter</a>
+                <a href="https://github.com/halieute" target="_blank">GitHub</a>
+            </div>
         </div>
-        
-    <header>
-        <div class="name">Souleymane Maman Nouri Souley</div>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/souleymanemamannourisouley" target="_blank">LinkedIn</a>
-            <a href="https://x.com/NouriSoule22856?t=4zDyk1SPtPulr55QZVjeXw&s=09" target="_blank">Twitter</a>
-            <a href="https://github.com/halieute" target="_blank">GitHub</a>
+        <div class="profile-picture">
+            <img src="profile-pic.png" alt="Profile Picture" loading="lazy">
         </div>
-        <img src="profile-pic.png" alt="Profile Picture" loading="lazy">
     </header>
     <main>
         <section>
