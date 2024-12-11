@@ -70,6 +70,36 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* Portfolio Section */
+        section#portfolio {
+            background-color: #ecf0f1;
+            padding: 2em 0;
+        }
+
+        #portfolio h2 {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        #portfolio .portfolio-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        #portfolio .portfolio-item {
+            width: 45%;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        #portfolio .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
@@ -82,6 +112,7 @@
         </div>
         <img src="profile-pic.png" alt="Profile Picture">
     </header>
+
     <main>
         <section>
             <h2>Objective</h2>
@@ -127,9 +158,22 @@
                 <li>Population of Mormyridae on the Niger River</li>
             </ul>
         </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">
+                    <h4>Niger River Map (Hydroshed Dataset)</h4>
+                    <img src="Portofolio_Maps/rivers_of_Niger.png" alt="Niger River Map" />
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
         <p>© 2024 Souleymane Maman Nouri Souley</p>
     </footer>
+
 </body>
 </html>
