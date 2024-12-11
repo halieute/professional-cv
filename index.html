@@ -46,12 +46,6 @@
             width: 90%;
             max-width: 800px;
         }
-        section {
-            margin-bottom: 2em;
-        }
-        h1, h2 {
-            color: #007acc;
-        }
         details summary {
             font-size: 1.2em;
             font-weight: bold;
@@ -68,6 +62,11 @@
         ul {
             list-style-type: disc;
             margin-left: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
         }
         footer {
             background-color: #333;
@@ -96,12 +95,10 @@
         <img src="profile-pic.png" alt="Profile Picture">
     </header>
     <main>
-        <section>
-            <h2>Biography</h2>
-            <p>
-                Souleymane Maman Nouri Souley is a dedicated environmental scientist and researcher with a strong background in Fisheries, Aquaculture, Climate Change, Marine Sciences, and Environmental Assessment. Currently pursuing a Master's in Climate Change and Marine Sciences at the Atlantic Technical University in Cabo Verde, his expertise includes remote sensing, water quality monitoring, and more.
-            </p>
-        </section>
+        <details open>
+            <summary>Biography</summary>
+            <p>Souleymane Maman Nouri Souley is a dedicated environmental scientist and researcher...</p>
+        </details>
         <details>
             <summary>Education</summary>
             <ul>
@@ -141,6 +138,11 @@
                 <li>First Assessment of Mormyridae Diversity</li>
                 <li>Population of Mormyridae on the Niger River</li>
             </ul>
+        </details>
+        <details>
+            <summary>Portfolio</summary>
+            <p>Below is an example of a map created for the Niger River:</p>
+            <img src="Portofolio_Maps/rivers_of_Niger.png" alt="Niger River Map">
         </details>
     </main>
     <footer>
