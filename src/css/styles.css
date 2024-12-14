@@ -1,4 +1,4 @@
-/* Global Reset */
+* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -23,10 +23,25 @@ header {
     color: white;
     padding: 1em 2em;
     flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    position: relative; /* Add relative positioning */
+}
+
+.profile-picture {
+    position: absolute; /* Position the profile picture absolutely */
+    top: 10px; /* Adjust the top position */
+    left: 10px; /* Adjust the left position */
+}
+
+.profile-picture img {
+    width: 100px; /* Adjust width to 100px */
+    height: 125px; /* Adjust height to 125px */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-info {
     text-align: left;
+    margin-left: 130px; /* Add margin to avoid overlap with profile picture */
 }
 
 .contact-info p {
@@ -48,14 +63,6 @@ header {
 
 .social-links a:hover {
     text-decoration: underline;
-}
-
-.profile-picture img {
-    width: 100px; /* Adjust width to 100px */
-    height: 125px; /* Adjust height to 125px */
-    border-radius: 8px; /* Slightly rounded corners */
-    margin-top: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .name {
@@ -134,8 +141,12 @@ footer a:hover {
         flex-direction: column;
         text-align: center;
     }
-    .profile-picture img {
+    .profile-picture {
+        position: static; /* Reset position for smaller screens */
         margin: 1em 0;
+    }
+    .contact-info {
+        margin-left: 0; /* Reset margin for smaller screens */
     }
     .social-links {
         flex-direction: column;
