@@ -1,18 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
     font-size: 14px;
     overflow-y: auto;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #007acc;
+    background: linear-gradient(90deg, #007acc, #005f99);
     color: white;
     padding: 1em 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
 }
 
@@ -35,9 +39,11 @@ header {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
+    transition: color 0.3s ease;
 }
 
 .social-links a:hover {
+    color: #ffcc00;
     text-decoration: underline;
 }
 
@@ -46,11 +52,12 @@ header {
     height: 150px;
     border-radius: 50%;
     margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .name {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
     flex: 1;
 }
@@ -59,6 +66,10 @@ main {
     margin: 2em auto;
     width: 95%;
     max-width: 1200px;
+    padding: 1em;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 section {
@@ -71,6 +82,7 @@ details {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
 details[open] {
@@ -81,6 +93,7 @@ summary {
     font-size: 1.3em;
     font-weight: bold;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 summary:hover {
@@ -89,6 +102,9 @@ summary:hover {
 
 section h2 {
     color: #007acc;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 ul {
@@ -101,15 +117,19 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
+    margin-top: 2em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer a {
     color: #00aced;
     margin: 0 10px;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
+    color: #ffcc00;
     text-decoration: underline;
 }
 
