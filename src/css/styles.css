@@ -51,10 +51,11 @@ header {
 }
 
 .profile-picture img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 100px; /* Adjust width to 100px */
+    height: 125px; /* Adjust height to 125px */
+    border-radius: 8px; /* Slightly rounded corners */
     margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .name {
