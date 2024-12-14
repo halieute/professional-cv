@@ -28,7 +28,7 @@ professional-website
 1. **Clone the Repository**:
    ```
    git clone <repository-url>
-   cd professional-website
+   cd professional-cv
    ```
 
 2. **Install Dependencies**:
