@@ -1,23 +1,28 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    font-size: 14px;
-    overflow-y: auto;
-    line-height: 1.6;
+/* Global Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: 14px; /* Adjust font size */
+    overflow-y: auto; /* Add scroll for long content */
+}
+
+/* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, #007acc, #005f99);
+    background-color: #007acc;
     color: white;
     padding: 1em 2em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .contact-info {
@@ -26,24 +31,22 @@ header {
 
 .contact-info p {
     margin: 0.5em 0;
-    color: white;
+    color: white; /* Set text color to white */
 }
 
 .social-links {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow social links to wrap on smaller screens */
 }
 
 .social-links a {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
-    transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #ffcc00;
     text-decoration: underline;
 }
 
@@ -52,48 +55,44 @@ header {
     height: 150px;
     border-radius: 50%;
     margin-top: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .name {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: bold;
     flex: 1;
 }
 
+/* Main Content Styling */
 main {
     margin: 2em auto;
-    width: 95%;
-    max-width: 1200px;
-    padding: 1em;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    width: 95%; /* Increase width for more space */
+    max-width: 1200px; /* Adjust maximum width */
 }
 
+/* Section Styling */
 section {
     margin-bottom: 2em;
 }
 
+/* Accordion Effect */
 details {
     margin-bottom: 0.5em;
     padding: 0.5em;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
 }
 
 details[open] {
-    background-color: #e6f7ff;
+    background-color: #e6f7ff; /* Highlight open sections */
 }
 
 summary {
     font-size: 1.3em;
     font-weight: bold;
     cursor: pointer;
-    transition: color 0.3s ease;
 }
 
 summary:hover {
@@ -102,37 +101,33 @@ summary:hover {
 
 section h2 {
     color: #007acc;
-    border-bottom: 2px solid #007acc;
-    padding-bottom: 0.5em;
-    margin-bottom: 1em;
 }
 
+/* List Styling */
 ul {
     list-style-type: disc;
     margin-left: 20px;
 }
 
+/* Footer Styling */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1em 0;
-    margin-top: 2em;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer a {
     color: #00aced;
     margin: 0 10px;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #ffcc00;
     text-decoration: underline;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -146,38 +141,27 @@ footer a:hover {
         gap: 10px;
     }
     main {
-        width: 95%;
-        margin: 2em auto;
-        max-width: 1200px;
-        background-color: #ffffff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        padding: 2em;
+        width: 95%; /* Reduce side margins on smaller screens */
     }
-    
-    img[loading="lazy"] {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    img[loading="lazy"]:hover {
-        transform: scale(1.05);
-    }
-    
-    .project-content {
-        animation: fadeIn 2s ease-in-out;
+}
+
+/* Lazy Loading for Images */
+img[loading="lazy"] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Animation */
+.project-content {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
         opacity: 0;
-        animation-fill-mode: forwards;
     }
-    
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
+    to {
+        opacity: 1;
     }
+}
